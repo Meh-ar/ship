@@ -1,0 +1,98 @@
+.border-big{
+    border: 5px solid rgba(162, 163, 180, 0.6);
+}
+.border-box {
+    border: 2px transparent black;
+    margin: 5px;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(209, 206, 190, 1);
+    box-shadow: 5px 5px 20px black;
+    border-radius: 30%;
+
+}
+body{
+    background-image: url(./1000_F_274381731_tVZMLWLnWbYXhUkZhxCeyJjTxNlVG6Ez.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen{
+    position : relative ;
+    display: flex;
+    background-image: linear-gradient(to left , rgba(229, 233, 31, 0.603) , rgba(35, 19, 56, 0.562));
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.table{ 
+    width: 500px;
+    height: 500px;
+    display: grid ; 
+    grid-template-columns: repeat(1,1fr 1fr 1fr 1fr);
+    grid-template-rows: 50px;
+    grid-auto-rows: 50px;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 5px;
+}
+img{
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border-radius:30% ;
+}
+.data-entry{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
+    right: 0;
+}
+input{
+    border-color: none ;
+    outline: none;
+    height: 2em;
+    width:  100%;
+}
+.output{
+    width: 20%;
+    height: 4em;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    background-color: rgba(12, 7, 82, 0.3);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bolder;
+    color:darkorange;
+    border-radius: 18px;
+    border : 3px solid darkred ; 
+
+}
+.hit-image{
+    background-color: black;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    transition: opacity 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
+
+}
+.table:hover .box{
+ background-color: blue;
+ opacity : 1 ;
+
+}
